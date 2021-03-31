@@ -1,0 +1,66 @@
+PUT matiere_esgi/_doc/1
+{
+  "matiere" : "Anglais",
+  "categories" : ["Langue"],
+  "coefficient" : 2,
+  "ects" : 2,
+  "intervenant" : "RAULIN",
+  "nombre_heure" : 15,
+  "date_first_cours" : "2020-09-01",
+  "date_last_cours" : "2021-07-30",
+  "description" : "Anglais : préparation au TOEIC 1"
+}
+
+PUT matiere_esgi/_doc/2
+{
+  "matiere" : "Cloud et big data",
+  "categories" : ["BIG DATA", "RESEAU"],
+  "coefficient" : 2,
+  "ects" : 2,
+  "intervenant" : "KIFFER",
+  "nombre_heure" : 15,
+  "date_first_cours" : "2021-04-10",
+  "date_last_cours" : "2021-07-30",
+  "description" : "Cloud et big data, architecture reseau cloud dans un env big data"
+}
+
+PUT matiere_esgi/_doc/3
+{
+  "matiere" : "Data marketing",
+  "categories" : ["BIG DATA", "METHODOLOGIE"],
+  "coefficient" : 2,
+  "ects" : 2,
+  "intervenant" : "LEVY",
+  "nombre_heure" : 15,
+  "date_first_cours" : "2021-05-10",
+  "date_last_cours" : "2021-07-01",
+  "description" : "Data marketing dans un environement big data, apprentissage de methodologie"
+}
+
+PUT matiere_esgi/_doc/4
+{
+  "matiere" : "Deep Reinforcement Learning",
+  "categories" : ["IA", "DEV"],
+  "coefficient" : 3,
+  "ects" : 3,
+  "intervenant" : "VIDAL",
+  "nombre_heure" : 30,
+  "date_first_cours" : "2021-04-15",
+  "date_last_cours" : "2021-07-28",
+  "description" : "Deep Reinforcement Learning, developpement de modele de deep learning, agent"
+}
+
+PUT matiere_esgi/_doc/5
+{
+  "matiere" : "Elastic search et sagemaker",
+  "categories" : ["BIG DATA", "DEV"],
+  "coefficient" : 2,
+  "ects" : 2,
+  "intervenant" : "AROUS",
+  "nombre_heure" : 15,
+  "date_first_cours" : "2021-03-10",
+  "date_last_cours" : "2021-04-15",
+  "description" : "Elastic search, KIBANA, dev tools, Analytics"
+}
+
+GET matiere_esgi/_search
