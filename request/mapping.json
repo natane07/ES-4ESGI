@@ -1,0 +1,54 @@
+PUT matiere_esgi
+{
+  "mappings": {
+    "properties": {
+      "matiere": {
+        "type": "text",
+        "analyzer": "standard",
+        "fields": {
+          "raw": {
+            "type": "keyword"  
+          }
+        }
+      },
+      "categories": {
+        "type": "keyword",
+        "analyzer": "standard",
+        "fields": {
+          "raw": {
+            "type": "text"  
+          }
+        }
+      },
+      "coefficient": {
+        "type": "integer"
+      },
+      "ects": {
+        "type": "integer"
+      },
+      "intervenant": {
+        "type": "text",
+        "analyzer": "standard",
+        "fields": {
+          "raw": {
+            "type": "keyword"  
+          }
+        }
+      },
+      "nombre_heure": {
+        "type": "double"
+      },
+      "date_first_cours": {
+        "type": "date",
+        "format": "yyyy-MM-dd'T'HH:mm:ss"
+      },
+      "date_last_cours": {
+        "type": "date",
+        "format": "yyyy-MM-dd'T'HH:mm:ss"
+      },
+      "description": {
+        "type": "text"
+      }
+    }
+  }
+}
