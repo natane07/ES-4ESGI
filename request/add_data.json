@@ -1,7 +1,7 @@
 PUT matiere_esgi/_doc/1
 {
   "matiere" : "Anglais",
-  "categories" : ["Langue"],
+  "categories" : ["LANGUE"],
   "coefficient" : 2,
   "ects" : 2,
   "intervenant" : "RAULIN",

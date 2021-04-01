@@ -1,0 +1,71 @@
+GET matiere_esgi/_search?q=*dev*
+
+GET matiere_esgi/_search
+{
+    "query": {
+        "term": {
+          "categories": "LANGUE"
+        }
+    }
+}
+
+GET matiere_esgi/_search
+{
+    "query": {
+        "match": {
+          "categories": "DEV"
+        }
+    }
+}
+
+
+GET matiere_esgi/_search
+{
+    "query": {
+        "query_string": {
+          "query": "*dev*"
+        }
+    }
+}
+
+GET matiere_esgi/_search
+{
+    "query": {
+        "multi_match": {
+          "query": "Deep", 
+          "fields": ["matiere", "categories"] 
+        }
+    }
+}
+
+
+
+GET matiere_esgi/_search
+{
+    "query": {
+        "query_string": {
+          "query": "*dev*"
+        }
+    }
+}
+
+GET matiere_esgi/_search?
+{
+  "query": {
+    "range": {
+      "nombre_heure": {
+        "gte": 15,
+        "lte": 30
+      }
+    }
+  }
+}
+
+GET matiere_esgi/_search 
+{
+  "query":{
+    "match":{
+      "categories":"Langue"
+    }
+  }
+}
