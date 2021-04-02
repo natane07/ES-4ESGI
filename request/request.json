@@ -69,3 +69,38 @@ GET matiere_esgi/_search
     }
   }
 }
+
+GET matiere_esgi/_search
+{
+  "aggs": {
+    "sum_nb_heure": {
+      "sum": {
+        "field": "nombre_heure"
+      }
+    }
+  }
+}
+
+GET matiere_esgi/_count
+
+GET matiere_esgi/_search
+{
+  "aggs": {
+    "moyenne_nb_heure": {
+      "avg": {
+        "field": "nombre_heure"
+      }
+    }
+  }
+}
+
+GET matiere_esgi/_search
+{
+  "aggs": {
+    "distinct_nb": {
+      "cardinality": {
+        "field": "intervenant.raw"
+      }
+    }
+  }
+}

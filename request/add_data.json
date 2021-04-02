@@ -63,4 +63,17 @@ PUT matiere_esgi/_doc/5
   "description" : "Elastic search, KIBANA, dev tools, Analytics"
 }
 
+PUT matiere_esgi/_doc/6
+{
+  "matiere" : "Deep Learning",
+  "categories" : ["IA", "DEV"],
+  "coefficient" : 3,
+  "ects" : 3,
+  "intervenant" : "VIDAL",
+  "nombre_heure" : 30,
+  "date_first_cours" : "2021-04-15",
+  "date_last_cours" : "2021-07-28",
+  "description" : "Deep Learning, MLP, CNN, RNN, LSTM"
+}
+
 GET matiere_esgi/_search
