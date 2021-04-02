@@ -2,10 +2,14 @@
     <v-container>
     <v-row class="text-center">
 
-      <v-col class="mb-4">
+      <v-col class="mb-4" cols="12">
         <h1 class="display-2 font-weight-bold mb-3">
           Moteur de recherche sur les matières à l'ESGI
         </h1>
+      </v-col>
+
+      <v-col class="mb-4" cols="12">
+        <Statistique/>
       </v-col>
 
       <v-col class="mb-5" cols="12">
@@ -102,9 +106,13 @@
 
 <script>
 import axios from 'axios'
+import Statistique from '@/components/Statistique.vue'
 
 export default {
     name: 'Elasticsearch',
+    components: {
+        Statistique
+    },
      data () {
         return {
             matieres: [],
